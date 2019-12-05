@@ -34,6 +34,16 @@ One snapshot with message calssifying suggestions
 #### README
 Readme file with Github repo contents and detailed explanations
 
+### Codes to run in CMD Terminal
+
+cd /home/workspace/data
+python process_data.py disaster_messages.csv disaster_categories.csv DisasterResponse.db
+cd /home/workspace/models
+python train_classifier.py ../data/DisasterResponse.db classifier.pkl
+cd /home/workspace/app
+python run.py
+env|grep WORK
+
 ### Acknowledgements and Licensing
 
 Datatsets for this project are exctracted through the Udacity course platform in collaboration with partners Figure Eight. 
